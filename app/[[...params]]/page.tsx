@@ -1,16 +1,13 @@
 import { redirect } from 'next/navigation';
 
 interface Props {
-  params: Promise<{
-    params?: string[];
-  }>;
+  params: {
+    params: string[];
+  };
 }
 
-export default async function RedirectPage({ params }: Props) {
-  const { params: pathParams } = await params;
-
-  // Parametreleri al
-  const pathArray = pathParams && pathParams.length > 0 ? pathParams : [];
+export default function RedirectPage({ params }: Props) {
+  const pathArray = params.params || [];
   
   if (pathArray.length === 0) {
     // Boş path - kökü yönlendir
