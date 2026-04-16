@@ -1,7 +1,12 @@
 {
-  "name": "url-shortener",
+  "name": "oyak-anker-bank-redirect-service",
   "version": "0.1.0",
+  "description": "OYAK Anker Bank - Secure redirect service for transactions and authentication flows",
   "private": true,
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
