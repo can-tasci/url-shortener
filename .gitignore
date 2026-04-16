@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# MCP configuration (contains secrets like Figma tokens)
+.mcprc
+cline_mcp_server.json
